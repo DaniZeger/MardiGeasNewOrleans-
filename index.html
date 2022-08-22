@@ -33,15 +33,16 @@
             id="logo-img"
         /></a>
       </div>
-      <form
-        action="https://www.google.com/search"
-        id="search-form"
-        method="get"
-      >
-        <input type="text" name="search" id="search" placeholder="Search" />
-        <button type="submit" id="search-btn">
-          <span class="material-symbols-outlined">search</span>
-        </button>
+      <form id="form" role="search">
+        <input
+          type="search"
+          name="q"
+          id="query"
+          placeholder="serach..."
+          aria-label="Search through site content"
+        />
+
+        <button><span class="material-symbols-outlined">search</span></button>
       </form>
     </nav>
 
@@ -117,5 +118,6 @@
     <!-- ########## Slidshow end here ########## -->
 
     <script src="/js/index.js"></script>
+    <script src="/js/navbar.js"></script>
   </body>
 </html>

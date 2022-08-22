@@ -33,7 +33,7 @@
             id="logo-img"
         /></a>
       </div>
-      <form id="form" role="search">
+      <form id="search-form" role="search">
         <input
           type="search"
           name="q"
@@ -42,7 +42,9 @@
           aria-label="Search through site content"
         />
 
-        <button><span class="material-symbols-outlined">search</span></button>
+        <button id="search-btn">
+          <span class="material-symbols-outlined">search</span>
+        </button>
       </form>
     </nav>
 
@@ -51,7 +53,7 @@
     <!-- ########## Slidshow start here ########## -->
 
     <header>
-      <div class="slideshow-container">
+      <div class="slideshow-container fade">
         <div id="slide1" class="mySlide">
           <div class="slide-txt">
             <h2>Slide 1</h2>
@@ -62,7 +64,7 @@
           </div>
         </div>
 
-        <div id="slide2" class="mySlide">
+        <div id="slide2" class="mySlide fade">
           <div class="slide-txt">
             <h2>Slide 2</h2>
             <p>
@@ -72,7 +74,7 @@
           </div>
         </div>
 
-        <div id="slide3" class="mySlide">
+        <div id="slide3" class="mySlide fade">
           <div class="slide-txt">
             <h2>Slide 3</h2>
             <p>
@@ -82,7 +84,7 @@
           </div>
         </div>
 
-        <div id="slide4" class="mySlide">
+        <div id="slide4" class="mySlide fade">
           <div class="slide-txt">
             <h2>Slide 4</h2>
             <p>
@@ -92,7 +94,7 @@
           </div>
         </div>
 
-        <div id="slide5" class="mySlide">
+        <div id="slide5" class="mySlide fade">
           <div class="slide-txt">
             <h2>Slide 5</h2>
             <p>
@@ -116,6 +118,103 @@
     </header>
 
     <!-- ########## Slidshow end here ########## -->
+
+    <!--########## First section start Here-->
+
+    <section id="countdwon">
+      <div id="clock-container">
+        <h1>Lorem, ipsum dolor.</h1>
+        <div id="clock-wraper">
+          <ul id="clock-time" class="clock-ul"></ul>
+          <ul id="clock-set" class="clock-ul">
+            <li>D</li>
+            <li>H</li>
+            <li>M</li>
+            <li>S</li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, sunt
+        possimus maiores, nulla aut temporibus qui repudiandae, velit minima
+        explicabo eius. Quae itaque error consequatur, quidem saepe amet
+        deleniti cupiditate.
+      </div>
+    </section>
+
+    <!--########## First section end Here-->
+
+    <!--########## Second section start Here-->
+
+    <section id="sectionTwo">
+      <div class="sectionTwo-txt">
+        <h1>Lorem, ipsum dolor.</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet,
+          minus sapiente nobis repellendus eius tempora.
+        </p>
+        <ul>
+          <li><span> Lorem ipsum: </span> Lorem ipsum dolor sit amet.</li>
+          <li><span> Lorem ipsum: </span> Lorem ipsum dolor sit amet.</li>
+        </ul>
+      </div>
+      <div class="sectionTwo-icon">
+        <img src="/img/photos.png" alt="" />
+      </div>
+    </section>
+
+    <!--########## Second section end Here-->
+
+    <!--########## Third section start Here-->
+
+    <div class="thumbnail-slider">
+      <div class="thumbnail-container">
+        <div class="item">
+          <a href=""><img src="" alt="" /></a>
+        </div>
+        <div class="item">
+          <a href=""><img src="" alt="" /></a>
+        </div>
+        <div class="item">
+          <a href=""><img src="" alt="" /></a>
+        </div>
+        <div class="item">
+          <a href=""><img src="" alt="" /></a>
+        </div>
+        <div class="item">
+          <a href=""><img src="" alt="" /></a>
+        </div>
+        <div class="item">
+          <a href=""><img src="" alt="" /></a>
+        </div>
+        <div class="item">
+          <a href=""><img src="" alt="" /></a>
+        </div>
+        <div class="item">
+          <a href=""><img src="" alt="" /></a>
+        </div>
+      </div>
+
+      <!-- controls slides -->
+      <div class="controls"></div>
+    </div>
+
+    <!--########## Third section end Here-->
+
+    <!--########## Fourth section start Here-->
+
+    <section id="sectionFour">
+      <div>
+        <h1>Lorem, ipsum.</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+      <form action="">
+        <input type="email" name="newMail" id="newsMail" />
+        <button>Join</button>
+      </form>
+    </section>
+
+    <!--########## Fourth section end Here-->
 
     <script src="/js/index.js"></script>
     <script src="/js/navbar.js"></script>

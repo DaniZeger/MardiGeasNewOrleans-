@@ -40,7 +40,7 @@
   margin: 0px 15px;
 }
 
-form {
+#search-form {
   width: 300px;
   height: 44px;
   display: flex;
@@ -48,7 +48,7 @@ form {
   align-items: center;
   border: 1px groove;
 }
-input {
+#query {
   all: unset;
   font: 16px system-ui;
   height: 100%;
@@ -61,7 +61,7 @@ input {
   opacity: 0.7;
 } */
 
-button {
+#search-btn {
   all: unset;
   cursor: pointer;
   width: 44px;
@@ -176,9 +176,10 @@ button {
   animation-name: fade;
   animation-duration: 1.5s;
 }
+
 @-webkit-keyframes fade {
   from {
-    opacity: 0.4;
+    opacity: 0.2;
   }
   to {
     opacity: 1;
@@ -186,12 +187,13 @@ button {
 }
 @keyframes fade {
   from {
-    opacity: 0.4;
+    opacity: 0.2;
   }
   to {
     opacity: 1;
   }
 }
+
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .prev,
@@ -212,3 +214,126 @@ button {
   }
 }
 /* ########### Slidshow style end here ########## */
+
+/* ########### First section style start here ############ */
+
+#countdwon {
+  display: flex;
+  padding: 2%;
+  align-items: center;
+}
+
+#clock-container {
+  text-align: center;
+  width: 40%;
+}
+
+#clock-wraper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.clock-ul {
+  display: flex;
+  list-style: none;
+}
+
+.clock-ul li {
+  text-align: center;
+  width: 40px;
+  height: 30px;
+}
+
+/* ########### First section style end here ############ */
+
+/* ########### Second section style start here ############ */
+
+#sectionTwo {
+  display: flex;
+  padding: 2%;
+  justify-content: center;
+  align-items: center;
+}
+
+.sectionTwo-txt {
+  padding: 0 5%;
+}
+
+.sectionTwo-txt ul {
+  list-style: none;
+}
+
+.sectionTwo-icon {
+  text-align: center;
+  width: 50%;
+}
+
+.sectionTwo-icon img {
+  width: 175px;
+}
+
+/* ########### Second section style end here ############ */
+
+/* ########### Third section style end here ############ */
+
+.thumbnail-slider {
+  width: 100%;
+  overflow: hidden;
+}
+
+.thumbnail-slider .thumbnail-container {
+  width: 100%;
+  float: left;
+  transition: margin 1s ease;
+}
+
+.thumbnail-slider .item {
+  height: 125px;
+  background-color: grey;
+  text-align: center;
+  font-size: 50px;
+  color: #ffffff;
+  float: left;
+}
+
+.thumbnail-slider .controls {
+  width: 100%;
+  float: left;
+  padding: 15px;
+}
+
+.thumbnail-slider .controls ul {
+  display: block;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.thumbnail-slider .controls ul li {
+  height: 35px;
+  width: 35px;
+  border: 1px solid #c3c3c3;
+  margin: 4px;
+  display: inline-block;
+  line-height: 33px;
+  cursor: pointer;
+}
+.thumbnail-slider .controls ul li.active {
+  background-color: green;
+  color: #ffffff;
+}
+
+/* ########### Third section style end here ############ */
+
+/* ########### Fourth section style start here ############ */
+
+#sectionFour {
+  padding: 5% 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ########### Fourth section style end here ############ */

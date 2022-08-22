@@ -1,5 +1,6 @@
-// Search JS start here //
-const f = document.getElementById("form");
+//  ############## Search JS start here ##############
+
+const f = document.getElementById("search-form");
 const q = document.getElementById("query");
 const google = "https://www.google.com/search?q=";
 
@@ -12,4 +13,4 @@ function submitted(event) {
 
 f.addEventListener("submit", submitted);
 
-// Search JS end here //
+//  ############## Search JS end here  ##############

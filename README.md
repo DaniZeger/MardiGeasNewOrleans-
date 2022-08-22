@@ -1,3 +1,5 @@
 ## To do:
 
-- change the image slide to divs with backhroung imng to see if it will work better.
+- change logo pictures to PNG one size
+
+- add these picture to the logo crusle

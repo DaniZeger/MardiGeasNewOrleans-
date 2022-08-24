@@ -1,5 +1,3 @@
 ## To do:
 
-- change logo pictures to PNG one size
-
-- add these picture to the logo crusle
+- Take care of the sponsers card. FIND A WAY TO COLVE IT!!!

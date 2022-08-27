@@ -19,7 +19,7 @@
     <!--########## Navbar start here ###########-->
 
     <nav id="topmenu">
-      <ul id="menu">
+      <ul id="nav-links">
         <li class="menu-link"><a href="/about.html">About</a></li>
         <li class="menu-link"><a href="/media.html">Media</a></li>
         <li class="menu-link"><a href="/FAQ.html">FAQ</a></li>
@@ -56,51 +56,33 @@
       <div class="slideshow-container fade">
         <div id="slide1" class="mySlide">
           <div class="slide-txt">
-            <h2>Slide 1</h2>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus
-              dignissimos rerum possimus illum omnis a!
-            </p>
+            <h2>
+              Hotel decorated in the color of the parade - yellow, purple, green
+            </h2>
           </div>
         </div>
 
         <div id="slide2" class="mySlide fade">
           <div class="slide-txt">
-            <h2>Slide 2</h2>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus
-              dignissimos rerum possimus illum omnis a!
-            </p>
+            <h2>Colorful dragon float</h2>
           </div>
         </div>
 
         <div id="slide3" class="mySlide fade">
           <div class="slide-txt">
-            <h2>Slide 3</h2>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus
-              dignissimos rerum possimus illum omnis a!
-            </p>
+            <h2>Mardi Gras parties go on all day and all night</h2>
           </div>
         </div>
 
         <div id="slide4" class="mySlide fade">
           <div class="slide-txt">
-            <h2>Slide 4</h2>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus
-              dignissimos rerum possimus illum omnis a!
-            </p>
+            <h2>Colorful streets of bars and restaurants</h2>
           </div>
         </div>
 
         <div id="slide5" class="mySlide fade">
           <div class="slide-txt">
-            <h2>Slide 5</h2>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus
-              dignissimos rerum possimus illum omnis a!
-            </p>
+            <h2>New Orleans' Mardi Gras from the early 1900's</h2>
           </div>
         </div>
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -122,7 +104,7 @@
     <!-- ########## First section start here ########## -->
 
     <section id="firstSection">
-      <div id="countdwon">
+      <div id="countdwon" class="inner-first">
         <div id="clock-container">
           <div id="clock-wraper">
             <ul id="clock-time" class="clock-ul"></ul>
@@ -133,42 +115,51 @@
               <li>S</li>
             </ul>
           </div>
-          <h1>Days to the festival</h1>
-        </div>
-        <div>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, sunt
-          possimus maiores..
+          <h1>To the festival</h1>
         </div>
       </div>
 
-      <div id="photoContest">
-        <div class="photoContest-txt">
+      <div id="photoContest" class="inner-first">
+        <div class="contastTitlle">
           <div class="photoContest-icon">
             <img src="/img/photos.png" alt="" />
           </div>
-          <h1>Lorem, ipsum dolor.</h1>
+          <h1>Award winning photo contest.</h1>
+        </div>
+        <div class="photoContest-txt">
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet,
-            minus sapiente nobis repellendus eius tempora.
+            We invite you to participate in the festival's photo contest. In
+            addition to publication on the website, the winning photos will
+            receive:
           </p>
-          <ul>
-            <li><span> Lorem ipsum: </span> Lorem ipsum dolor sit amet.</li>
-            <li><span> Lorem ipsum: </span> Lorem ipsum dolor sit amet.</li>
-          </ul>
+          <div class="prizes">
+            <div class="prize-place">
+              <h2>1</h2>
+              <h4>Prize</h4>
+            </div>
+            <p>
+              stay at Hotel Provincial for two, the tour of your choice with
+              Gray Line New Orleans, and breakfast at Cafe Beignet.
+            </p>
+          </div>
+          <div class="prizes">
+            <div class="prize-place">
+              <h2>2</h2>
+              <h4>Prize</h4>
+            </div>
+            <p>
+              Harbor Jazz Cruise with a buffet lunch on the Steamboat NATCHEZ.
+            </p>
+          </div>
         </div>
       </div>
 
-      <div id="packeges">
-        <div class="packeges-img">
-          <img
-            src="/img/020122_Interior_Craftsman_Mardi_Gras.width-704.png"
-            alt=""
-          />
-        </div>
-        <h1>Lorem, ipsum dolor.</h1>
+      <div id="packeges" class="inner-first">
+        <h2>Did you know?</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet,
-          minus sapiente nobis repellendus eius tempora.
+          Part of the organization of the festival, we also take care of
+          affordable vacation packages so that you can enjoy as much as possible
+          for as little price as possible.
         </p>
       </div>
     </section>
@@ -176,19 +167,26 @@
     <!-- ########## First section end here ########## -->
 
     <!-- ########## Second section start here ########## -->
-    <section id="secondSection">
-      <div class="secondSection-container">
-        <img
-          src="https://scontent.ftlv6-1.fna.fbcdn.net/v/t39.30808-6/271261669_5078899425475754_8887428453657550885_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=9267fe&_nc_ohc=wSGlOSb_stsAX_U8ur_&tn=JB59Ed-u0LWlp0M-&_nc_ht=scontent.ftlv6-1.fna&oh=00_AT_crdAyywGrpbr1iQQHT6yqXrT-5BrWCmiEWjYyDW84tw&oe=630B78A2"
-          alt="Avatar"
-          class="secondSection-image"
-        />
-        <div class="sponserLogo">
-          <img src="/img/logos/Walkons.png" alt="" />
+
+    <section>
+      <div id="carousel-wrapper">
+        <div id="cards-slider">
+          <div id="current-option">
+            <span
+              id="current-option-text1"
+              data-previous-text=""
+              data-next-text=""
+            ></span>
+            <span
+              id="current-option-text2"
+              data-previous-text=""
+              data-next-text=""
+            ></span>
+          </div>
+          <button id="previous-option"></button>
+          <button id="next-option"></button>
         </div>
-        <div class="overlay">
-          <div class="text">Hello World</div>
-        </div>
+        <div id="image"></div>
       </div>
     </section>
     <!-- ########## Second section end here ########## -->

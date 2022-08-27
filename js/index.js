@@ -90,6 +90,7 @@ const text2_options = [
   "8 min. read",
   "87,658.1277 min. read",
 ];
+const color_options = ["#EBB9D2", "#FE9968", "#7FE0EB", "#6CE5B1"];
 const image_options = [
   "https://images.unsplash.com/photo-1524721696987-b9527df9e512?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1190&q=80",
   "https://images.unsplash.com/photo-1556656793-08538906a9f8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80",
@@ -101,12 +102,14 @@ const currentOptionText1 = document.getElementById("current-option-text1");
 const currentOptionText2 = document.getElementById("current-option-text2");
 const currentOptionImage = document.getElementById("image");
 const carousel = document.getElementById("carousel-wrapper");
+const mainMenu = document.getElementById("spCarousel");
 const optionPrevious = document.getElementById("previous-option");
 const optionNext = document.getElementById("next-option");
 
 currentOptionText1.innerText = text1_options[i];
 currentOptionText2.innerText = text2_options[i];
 currentOptionImage.style.backgroundImage = "url(" + image_options[i] + ")";
+mainMenu.style.background = color_options[i];
 
 optionNext.onclick = function () {
   i = i + 1;
@@ -115,6 +118,7 @@ optionNext.onclick = function () {
 
   currentOptionText2.dataset.nextText = text2_options[i];
 
+  mainMenu.style.background = color_options[i];
   carousel.classList.add("anim-next");
 
   setTimeout(() => {
@@ -137,6 +141,7 @@ optionPrevious.onclick = function () {
 
   currentOptionText2.dataset.previousText = text2_options[i];
 
+  mainMenu.style.background = color_options[i];
   carousel.classList.add("anim-previous");
 
   setTimeout(() => {

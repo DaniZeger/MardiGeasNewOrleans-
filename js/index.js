@@ -89,17 +89,46 @@ const text1_options = [
   "Walk-On's Bistreaux and Bar",
 ];
 const text2_options = [
-  "69 min. read",
-  "7 min. read",
-  "8 min. read",
-  "87,658.1277 min. read",
-  "69 min. read",
-  "7 min. read",
-  "8 min. read",
-  "87,658.1277 min. read"
+  "A stone’s throw from the French Quarter, in the soul of the Deep South.",
+  "The Haunted Museum & Voodoo Shop features Historic Haunted Museum Tours, Ghost Hunts, Haunted Collections, Paranormal Evidence and more...",
+  "When you make a child’s potential visible, wonderful things happen. So we created a place where kids use play, shared exploration, and conversation to connect with the people and world around them.",
+  "The Museum of Death experience is a self guided tour lasting approximately 45 minutes to an hour, however those who can stomach it may stay as long as they like, as there are hundreds of items on display.",
+  "We live at the intersection of parking and technology. We are a technology company, a parking operator, and network of parking advisors to bring it all together.",
+  "Upgrade your stay with premium Sheraton Club Lounge access or reboot in our fully-equipped Sheraton Fitness Center.",
+  "Rich in history and personality, New Orleans is unlike any other US city. Honoring its spirit and elegance, The Ritz-Carlton, New Orleans invites visitors to its French Quarter retreat, set within a 1908 Beaux Arts building.",
+  "Whether you’re here for dinner with the family, date night, cocktails with the girls, or to watch a game on the big screen, we’re always happy to share our Louisiana culture with you.",
 ];
-const bg_options = ["url(/img/sponsersIMG/AceHotelBG.jpg)","url(/img/sponsersIMG/HauntedMuseumBG.jpg)", "url(/img/sponsersIMG/LCMBG.jpg)", "url(/img/sponsersIMG/MuseumOfDeathBG.jpeg)", "url(/img/sponsersIMG/PremiumParkingBG.jfif)", "url(/img/sponsersIMG/SheratonBG.jfif)", "url(/img/sponsersIMG/TheRitzCarltonBG.jfif)", "url(/img/sponsersIMG/WalkonsBG.jpg)" ];
-const image_options = ["/img/logos/AceHotel.png","/img/logos/HauntedMuseum.png","/img/logos/LCM.png","/img/logos/MuseumOfDeath.png","/img/logos/PremiumParking.png","/img/logos/Sheraton.png","/img/logos/TheRitzCarlton.png","/img/logos/Walkons.png"];
+
+const spLinks = [
+  "https://acehotel.com/new-orleans/?gclid=CjwKCAjwpKyYBhB7EiwAU2Hn2ZxZjdq8EtaP22XoBupXEctCdq0AUKQH9JTtomayCTwGjSS1EqvVyxoCceoQAvD_BwE",
+  "https://www.bloodymarystours.com/hauntedmuseum.html",
+  "https://lcm.org/",
+  "http://www.museumofdeath.net/nola",
+  "https://www.premiumparking.com/P402",
+  "https://www.marriott.com/en-us/hotels/msyis-sheraton-new-orleans-hotel/overview/",
+  "https://www.ritzcarlton.com/en/hotels/new-orleans",
+  "https://walk-ons.com/",
+];
+const bg_options = [
+  "url(/img/sponsersIMG/AceHotelBG.jpg)",
+  "url(/img/sponsersIMG/HauntedMuseumBG.jpg)",
+  "url(/img/sponsersIMG/LCMBG.jpg)",
+  "url(/img/sponsersIMG/MuseumOfDeathBG.jpeg)",
+  "url(/img/sponsersIMG/PremiumParkingBG.jfif)",
+  "url(/img/sponsersIMG/SheratonBG.jfif)",
+  "url(/img/sponsersIMG/TheRitzCarltonBG.jfif)",
+  "url(/img/sponsersIMG/WalkonsBG.jpg)",
+];
+const image_options = [
+  "/img/logos/AceHotel.png",
+  "/img/logos/HauntedMuseum.png",
+  "/img/logos/LCM.png",
+  "/img/logos/MuseumOfDeath.png",
+  "/img/logos/PremiumParking.png",
+  "/img/logos/Sheraton.png",
+  "/img/logos/TheRitzCarlton.png",
+  "/img/logos/Walkons.png",
+];
 var i = 0;
 const currentOptionText1 = document.getElementById("current-option-text1");
 const currentOptionText2 = document.getElementById("current-option-text2");
@@ -110,9 +139,13 @@ const optionPrevious = document.getElementById("previous-option");
 const optionNext = document.getElementById("next-option");
 
 currentOptionText1.innerText = text1_options[i];
-currentOptionText2.innerText = text2_options[i];
+currentOptionText2.innerHTML =
+  text2_options[i] +
+  `</br> <a href="${spLinks}" target="_blank" class="sp-link"> Visit Site </a>`;
 currentOptionImage.style.backgroundImage = "url(" + image_options[i] + ")";
-mainMenu.style.backgroundImage = "linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 20%, rgba(255,255,255,0.8) 85%, rgba(255,255,255,0) 100%)," + bg_options[i];
+mainMenu.style.backgroundImage =
+  "linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 20%, rgba(255,255,255,0.8) 85%, rgba(255,255,255,0) 100%)," +
+  bg_options[i];
 
 optionNext.onclick = function () {
   i = i + 1;
@@ -121,16 +154,20 @@ optionNext.onclick = function () {
 
   currentOptionText2.dataset.nextText = text2_options[i];
 
-  mainMenu.style.backgroundImage = "linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 20%, rgba(255,255,255,0.8) 85%, rgba(255,255,255,0) 100%)," + bg_options[i];
+  mainMenu.style.backgroundImage =
+    "linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 20%, rgba(255,255,255,0.8) 85%, rgba(255,255,255,0) 100%)," +
+    bg_options[i];
   carousel.classList.add("anim-next");
-  
+
   setTimeout(() => {
     currentOptionImage.style.backgroundImage = "url(" + image_options[i] + ")";
   }, 455);
-  
+
   setTimeout(() => {
     currentOptionText1.innerText = text1_options[i];
-    currentOptionText2.innerText = text2_options[i];
+    currentOptionText2.innerHTML =
+      text2_options[i] +
+      `</br> <a href="${spLinks}" target="_blank" class="sp-link"> Visit Site </a>`;
     carousel.classList.remove("anim-next");
   }, 650);
 };
@@ -144,18 +181,42 @@ optionPrevious.onclick = function () {
 
   currentOptionText2.dataset.previousText = text2_options[i];
 
-  mainMenu.style.backgroundImage = "linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 20%, rgba(255,255,255,0.8) 85%, rgba(255,255,255,0) 100%)," + bg_options[i];
+  mainMenu.style.backgroundImage =
+    "linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 20%, rgba(255,255,255,0.8) 85%, rgba(255,255,255,0) 100%)," +
+    bg_options[i];
   carousel.classList.add("anim-previous");
 
   setTimeout(() => {
     currentOptionImage.style.backgroundImage = "url(" + image_options[i] + ")";
   }, 455);
-  
+
   setTimeout(() => {
     currentOptionText1.innerText = text1_options[i];
-    currentOptionText2.innerText = text2_options[i];
+    currentOptionText2.innerHTML =
+      text2_options[i] +
+      `</br> <a href="${spLinks}" target="_blank" class="sp-link"> Visit Site </a>`;
     carousel.classList.remove("anim-previous");
   }, 650);
 };
 
 // ############ Sponsered card JS end here ############
+
+// ############ Newsletter JS start here ############
+
+let nlForm = document.getElementById("newsletter-form");
+let nlMsg = document.getElementById("nl_msg");
+
+nlForm.addEventListener("submit", (evt) => {
+  evt.preventDefault();
+  let nlMail = document.getElementById("newsletter");
+
+  if (!nlMail.value.includes("@")) {
+    nlMsg.innerHTML = "Mail incorect. Let's try again";
+  } else {
+    nlMsg.innerHTML = "Thank you for joining our newsletter";
+  }
+
+  nlMail.value = "";
+});
+
+// ############ Newsletter JS end here ############

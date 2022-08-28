@@ -325,7 +325,11 @@
 
 #sp-container {
   box-shadow: 0px 2px 20px 7px rgba(0, 0, 0, 0.7);
-  background-image: linear-gradient(rgba(242, 204, 15, 0.9) ,rgba(242, 204, 15, 0.9)) , url(/img/retro-bg.jpg);
+  background-image: linear-gradient(
+      rgba(242, 204, 15, 0.9),
+      rgba(242, 204, 15, 0.9)
+    ),
+    url(/img/retro-bg.jpg);
   background-size: cover;
   overflow: hidden;
   padding: 50px;
@@ -335,13 +339,12 @@
 }
 
 #sp-container h1 {
-  font-family: 'Pattaya';
+  font-family: "Pattaya";
   font-size: 65px;
   letter-spacing: 3px;
   margin-right: 50px;
-  color: #9453a6;
+  color: #f2f2f2;
 }
-
 
 #carousel-wrapper {
   width: auto;
@@ -366,7 +369,7 @@
   transition: all 0.6s ease-in-out;
   background-position: center;
   background-size: cover;
-  border: #9453a6 5px groove;
+  border: #f2f2f2 5px groove;
 }
 #carousel-wrapper #crslBg #current-option {
   position: relative;
@@ -378,11 +381,9 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
-
 }
 #carousel-wrapper #crslBg #current-option #current-option-text1 {
-  font-size: 1.6rem;
-  line-height: 3rem;
+  font-size: 2rem;
   width: 220px;
   height: 200px;
   display: flex;
@@ -514,8 +515,17 @@
   animation: previous-image 0.65s 0.085s;
 }
 
+.sp-link {
+  text-decoration: none;
+  color: white;
+  margin-top: 20px;
+  background-color: black;
+  padding: 10px;
+}
+
 @keyframes previous-text {
-  50%, 55% {
+  50%,
+  55% {
     transform: translate(0%, 390px);
   }
   to {
@@ -547,7 +557,8 @@
   }
 }
 @keyframes next-text {
-  50%, 55% {
+  50%,
+  55% {
     transform: translate(0%, -390px);
   }
   to {
@@ -583,5 +594,83 @@
 
 /* ########### Third section style start here ########## */
 
+#section3 {
+  height: 250px;
+  background-image: linear-gradient(
+      rgba(140, 191, 63, 0.9),
+      rgba(140, 191, 63, 0.9)
+    ),
+    url(/img/retro-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 2px 20px 7px rgba(0, 0, 0, 0.7);
+}
+
+#section3 h2 {
+  font-family: "Pattaya";
+  color: #9453a6;
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+#newsletter {
+  width: 450px;
+  height: 40px;
+  padding: 5px;
+}
+
+#newsletter::placeholder {
+  color: rgb(133, 133, 133);
+  font-size: 16px;
+}
+
+#nl-btn {
+  height: 40px;
+  width: 100px;
+  background-color: #9453a6;
+  color: #f2f2f2;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+}
+
+#nl_msg {
+  margin-top: 10px;
+  color: #9453a6;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 18px;
+}
 
 /* ########### Third section style end here ########## */
+
+/* ########### Footer style start here ########## */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 150px;
+  padding: 15px;
+  background-color: #fdf8e5;
+  box-shadow: 0px 2px 20px 7px rgba(0, 0, 0, 0.7);
+}
+
+#icons-wraper {
+  display: flex;
+  list-style: none;
+  margin: 25px;
+}
+
+.social-icon {
+  width: 50px;
+  margin: 5px 10px;
+  border-radius: 50px;
+  box-shadow: 5px 5px 8px 1px rgba(0, 0, 0, 0.5);
+}
+
+/* ########### Footer style end here ########## */

@@ -1,4 +1,4 @@
-@import url(/css/navbar.css);
+@import url(/css/consistent.css);
 
 * {
   margin: 0;
@@ -647,30 +647,3 @@
 }
 
 /* ########### Third section style end here ########## */
-
-/* ########### Footer style start here ########## */
-
-footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 150px;
-  padding: 15px;
-  background-color: #fdf8e5;
-  box-shadow: 0px 2px 20px 7px rgba(0, 0, 0, 0.7);
-}
-
-#icons-wraper {
-  display: flex;
-  list-style: none;
-  margin: 25px;
-}
-
-.social-icon {
-  width: 50px;
-  margin: 5px 10px;
-  border-radius: 50px;
-  box-shadow: 5px 5px 8px 1px rgba(0, 0, 0, 0.5);
-}
-
-/* ########### Footer style end here ########## */

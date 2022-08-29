@@ -12,8 +12,7 @@ body {
   padding-top: var(--nav-height);
 }
 
-/* .nav {
-} */
+/* ########### Navbar style start here ########## */
 
 .nav--hidden {
   transform: translateY(calc(-1 * var(--nav-height)));
@@ -55,7 +54,9 @@ body {
 }
 #nav-links {
   display: flex;
+  padding-top: 20px;
   list-style: none;
+  height: var(--nav-height);
 }
 .menu-link a {
   color: rgb(148, 83, 166);
@@ -63,6 +64,10 @@ body {
   font-size: 25px;
   margin: 0px 15px;
   font-family: "Pattaya";
+}
+
+.corent {
+  border-bottom: 5px solid rgb(148, 83, 166);
 }
 
 #search-form {
@@ -94,3 +99,54 @@ body {
   height: 44px;
   padding: 0 10px;
 }
+
+/* ########### Navbar style start here ########## */
+
+/* ########### Header style start here ########## */
+
+#header {
+  background-image: url(/img/headerBG.jpg);
+  height: 350px;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 2px 20px 7px rgba(0, 0, 0, 0.7);
+  position: relative;
+}
+
+#header-title {
+  color: #f2f2f2;
+  font-size: 95px;
+  text-align: center;
+  font-family: "Henny Penny";
+}
+/* ########### Header style end here ########## */
+
+/* ########### Footer style start here ########## */
+
+footer {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 150px;
+  padding: 15px;
+  background-color: #fdf8e5;
+  box-shadow: 0px 2px 20px 7px rgba(0, 0, 0, 0.7);
+}
+
+#icons-wraper {
+  display: flex;
+  list-style: none;
+  margin: 25px;
+}
+
+.social-icon {
+  width: 50px;
+  margin: 5px 10px;
+  border-radius: 50px;
+  box-shadow: 5px 5px 8px 1px rgba(0, 0, 0, 0.5);
+}
+
+/* ########### Footer style end here ########## */

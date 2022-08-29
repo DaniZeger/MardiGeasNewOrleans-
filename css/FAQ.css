@@ -1,0 +1,74 @@
+@import url(/css/consistent.css);
+
+/* FAQ Section style start here */
+
+#faq-section {
+  box-shadow: 0px 2px 20px 7px rgba(0, 0, 0, 0.7);
+  background-image: radial-gradient(
+      rgba(242, 204, 15, 0.9),
+      rgba(242, 204, 15, 0.9)
+    ),
+    url(/img/retro-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 6%;
+}
+
+#inner-div {
+  width: 80%;
+  margin: auto;
+  border: 2px solid black;
+}
+
+.accordion {
+  background-color: #f2f2f2;
+  color: #0d0d0d;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.panel {
+  padding: 0 2%;
+  max-height: 0;
+  overflow: hidden;
+  font-family: "Roboto", sans-serif;
+  transition: max-height 0.2s ease-out;
+}
+
+.panel p {
+  padding: 15px 0px;
+}
+
+.accordion:after {
+  content: "\02795"; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+.green {
+  background-color: #9fd849;
+}
+.green:hover {
+  background-color: #557327;
+}
+
+.purple {
+  background-color: #a660b9;
+}
+.purple:hover {
+  background-color: #5a3365;
+}
+/* FAQ Section style end here */

@@ -11,7 +11,7 @@
     url(/img/retro-bg.jpg);
   background-size: cover;
   background-position: center;
-  padding: 6%;
+  padding: 10rem 6rem 6rem 6rem;
 }
 
 #inner-div {

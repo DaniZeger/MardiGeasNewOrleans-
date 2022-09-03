@@ -18,14 +18,8 @@
   <body>
     <!--########## Navbar start here ###########-->
 
-    <nav id="topmenu">
-      <ul id="nav-links">
-        <li class="menu-link"><a href="/about.html">About</a></li>
-        <li class="menu-link"><a href="/media.html">Media</a></li>
-        <li class="menu-link"><a href="/FAQ.html">FAQ</a></li>
-        <li class="menu-link"><a href="/contact.html">Contact Us</a></li>
-      </ul>
-      <div id="logo">
+    <nav id="navbar">
+      <div class="logo">
         <a href="./index.html"
           ><img
             src="https://www.mardigrasneworleans.com/templates/client/imagesNew/xlogo.png.pagespeed.ic.q4Fw8Vll14.webp"
@@ -33,19 +27,32 @@
             id="logo-img"
         /></a>
       </div>
-      <form id="search-form" role="search">
-        <input
-          type="search"
-          name="q"
-          id="query"
-          placeholder="serach..."
-          aria-label="Search through site content"
-        />
+      <div class="hamburger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/media.html">Media</a></li>
+        <li><a href="/FAQ.html">FAQ</a></li>
+        <li><a href="/contact.html">Contact Us</a></li>
+        <li>
+          <form id="search-form" role="search">
+            <input
+              type="search"
+              name="q"
+              id="query"
+              placeholder="serach..."
+              aria-label="Search through site content"
+            />
 
-        <button id="search-btn">
-          <span class="material-symbols-outlined">search</span>
-        </button>
-      </form>
+            <button id="search-btn">
+              <span class="material-symbols-outlined">search</span>
+            </button>
+          </form>
+        </li>
+      </ul>
     </nav>
 
     <!-- ########## Navbar end here ########## -->

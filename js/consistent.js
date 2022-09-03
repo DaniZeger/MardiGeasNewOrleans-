@@ -1,21 +1,33 @@
-// Navbar apear when scroll up - start
-{
-  const nav = document.querySelector("#topmenu");
-  let lastScrollY = window.scrollY;
+const hamburger = document.querySelector(".hamburger");
+const navLinks = document.querySelector(".nav-links");
+const links = document.querySelectorAll(".nav-links li");
 
-  window.addEventListener("scroll", () => {
-    if (lastScrollY < window.scrollY) {
-      nav.classList.add("nav--hidden");
-    } else {
-      nav.classList.remove("nav--hidden");
-    }
-
-    lastScrollY = window.scrollY;
+hamburger.addEventListener("click", () => {
+  //Animate Links
+  navLinks.classList.toggle("open");
+  links.forEach((link) => {
+    link.classList.toggle("fade");
   });
-}
-// Navbar apear when scroll up - end
 
-//  ############## Search JS start here ##############
+  //Hamburger Animation
+  hamburger.classList.toggle("toggle");
+});
+
+// Navbar apear whan scroll up
+
+var lastScrollTop;
+navbar = document.getElementById("navbar");
+window.addEventListener("scroll", function () {
+  var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  if (scrollTop > lastScrollTop) {
+    navbar.style.top = "-80px";
+  } else {
+    navbar.style.top = "0";
+  }
+  lastScrollTop = scrollTop;
+});
+
+// Search JS
 
 const f = document.getElementById("search-form");
 const q = document.getElementById("query");
@@ -29,5 +41,3 @@ function submitted(event) {
 }
 
 f.addEventListener("submit", submitted);
-
-//  ############## Search JS end here  ##############

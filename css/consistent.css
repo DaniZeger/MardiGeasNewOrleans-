@@ -6,19 +6,7 @@
   box-sizing: border-box;
 }
 
-body {
-  --nav-height: 75px;
-
-  padding-top: var(--nav-height);
-}
-
 /* ########### Navbar style start here ########## */
-
-.nav--hidden {
-  transform: translateY(calc(-1 * var(--nav-height)));
-  box-shadow: none;
-}
-
 .material-symbols-outlined {
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
   fill: currentColor;
@@ -28,50 +16,64 @@ body {
   color: #f2f2f2;
 }
 
-#topmenu {
-  width: 100%;
-  height: var(--nav-height);
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 99;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  transition: transform 0.2s;
+nav {
+  overflow-x: hidden;
+  height: 6rem;
+  width: 100vw;
   background-color: #8cbf3f;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 5px 15px;
   box-shadow: 0px 2px 20px 7px rgba(0, 0, 0, 0.7);
+  display: flex;
+  position: fixed;
+  z-index: 10;
+}
+.corent {
+  opacity: 0.5;
 }
 
-#logo {
+/*Styling logo*/
+.logo {
+  padding: 1vh 1vw;
   text-align: center;
 }
-
-#logo-img {
-  width: 225px;
+.logo img {
+  height: 5rem;
 }
-#nav-links {
+
+/*Styling Links*/
+.nav-links {
   display: flex;
-  padding-top: 20px;
   list-style: none;
-  height: var(--nav-height);
+  width: 88vw;
+  padding: 0 0.7vw;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 2%;
 }
-.menu-link a {
-  color: rgb(148, 83, 166);
+.nav-links li a {
   text-decoration: none;
-  font-size: 25px;
-  margin: 0px 15px;
+  margin: 0 0.7vw;
+  color: #9453a6;
   font-family: "Pattaya";
+  font-size: 25px;
 }
-
-.corent {
-  border-bottom: 5px solid rgb(148, 83, 166);
+.nav-links li {
+  position: relative;
+}
+.nav-links li a::before {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 0%;
+  position: absolute;
+  transition: all ease-in-out 250ms;
+  margin: 0 0 0 10%;
+}
+.nav-links li a:hover::before {
+  width: 80%;
 }
 
 #search-form {
-  width: 300px;
+  width: 20vw;
   height: 44px;
   display: flex;
   flex-direction: row;
@@ -99,6 +101,98 @@ body {
   height: 44px;
   padding: 0 10px;
 }
+/*Styling Hamburger Icon*/
+.hamburger div {
+  width: 30px;
+  height: 3px;
+  background: #9453a6;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+.hamburger {
+  display: none;
+}
+
+/*Stying for small screens*/
+@media screen and (max-width: 800px) {
+  nav {
+    position: fixed;
+    z-index: 3;
+  }
+  .hamburger {
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 50%;
+    transform: translate(-5%, -50%);
+    z-index: 2;
+    transition: all 0.7s ease;
+  }
+  .nav-links {
+    position: fixed;
+    background: #8cbf3f;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    clip-path: circle(50px at 90% -20%);
+    -webkit-clip-path: circle(50px at 90% -10%);
+    transition: all 1s ease-out;
+    pointer-events: none;
+  }
+  .nav-links.open {
+    clip-path: circle(1000px at 90% -10%);
+    -webkit-clip-path: circle(1000px at 90% -10%);
+    pointer-events: all;
+  }
+  .nav-links li {
+    opacity: 0;
+  }
+  .nav-links li:nth-child(1) {
+    transition: all 0.5s ease 0.2s;
+    margin-top: 25px;
+  }
+  .nav-links li:nth-child(2) {
+    transition: all 0.5s ease 0.4s;
+  }
+  .nav-links li:nth-child(3) {
+    transition: all 0.5s ease 0.6s;
+  }
+  .nav-links li:nth-child(4) {
+    transition: all 0.5s ease 0.7s;
+  }
+  .nav-links li:nth-child(5) {
+    transition: all 0.5s ease 0.8s;
+  }
+  .nav-links li:nth-child(6) {
+    transition: all 0.5s ease 0.9s;
+    margin: 0;
+  }
+  .nav-links li:nth-child(7) {
+    transition: all 0.5s ease 1s;
+    margin: 0;
+  }
+  li.fade {
+    opacity: 1;
+  }
+
+  #search-form {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 25px;
+  }
+}
+/*Animating Hamburger Icon on Click*/
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2 {
+  transition: all 0.7s ease;
+  width: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
 
 /* ########### Navbar style start here ########## */
 
@@ -113,6 +207,7 @@ body {
   align-items: center;
   box-shadow: 0px 2px 20px 7px rgba(0, 0, 0, 0.7);
   position: relative;
+  top: 6rem;
 }
 
 #header-title {

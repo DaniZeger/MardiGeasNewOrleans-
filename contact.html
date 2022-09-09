@@ -1,12 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="/css/contact.css" />
+    <title>Mardi Gras New Orleans | Contact</title>
+  </head>
+  <body>
+    <!-- ########## Navbar start here ###########-->
+
+    <nav id="navbar">
+      <div class="logo">
+        <a href="./index.html"
+          ><img
+            src="https://www.mardigrasneworleans.com/templates/client/imagesNew/xlogo.png.pagespeed.ic.q4Fw8Vll14.webp"
+            alt="Mardi Gras New Orleans logo"
+            id="logo-img"
+        /></a>
+      </div>
+      <div class="hamburger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/media.html">Media</a></li>
+        <li><a href="/FAQ.html">FAQ</a></li>
+        <li class="corent"><a href="/contact.html">Contact Us</a></li>
+        <li><a href="/quiz.html">Quiz</a></li>
+        <li>
+          <form id="search-form" role="search">
+            <input
+              type="search"
+              name="q"
+              id="query"
+              placeholder="serach..."
+              aria-label="Search through site content"
+            />
+
+            <button id="search-btn">
+              <span class="material-symbols-outlined">search</span>
+            </button>
+          </form>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- ########## Navbar end here ########## -->
+
+    <!-- ########## Header start here ########## -->
+
+    <header id="header">
+      <h1 id="header-title">Contact Us</h1>
+    </header>
+
+    <!-- ########## Header end here ########## -->
+
+    <!-- ########## Section start here ########## -->
+
+    <section id="contact-container">
+      <div id="details">
+        <ul id="details-list">
+          <li>
+            <span
+              ><img class="icon" src="/img/social_Icons/call.svg" alt=""
+            /></span>
+            123456789
+          </li>
+          <li>
+            <span
+              ><img class="icon" src="/img/social_Icons/mail.svg" alt=""
+            /></span>
+            bla@blabla.com
+          </li>
+          <li>
+            <span
+              ><img
+                class="icon"
+                src="/img/social_Icons/location_city.svg"
+                alt=""
+            /></span>
+            1300 Perdido St,<br />
+            New Orleans, LA 70112, United States
+          </li>
+        </ul>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d55311.20488810955!2d-90.077042!3d29.952107999999996!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x986d027f806cb8cb!2sCity%20of%20New%20Orleans%20-%20City%20Hall!5e0!3m2!1sen!2sil!4v1661334866942!5m2!1sen!2sil"
+          width="400"
+          height="300"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+        <ul id="social">
+          <li>
+            <a
+              href="https://www.facebook.com/MardiGrasNewOrleans"
+              target="_blank"
+              ><img src="/img/social_Icons/facebook.svg" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/MardiGrasNOLA" target="_blank"
+              ><img src="/img/social_Icons/twiter.svg" alt=""
+            /></a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/mardigrasneworleans/"
+              target="_blank"
+              ><img src="/img/social_Icons/instegram.svg" alt=""
+            /></a>
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/channel/UCOrq1qF6dVDn9Do-wvbKh0Q"
+              target="_blank"
+              ><img src="/img/social_Icons/youtube.svg" alt=""
+            /></a>
+          </li>
+          <li>
+            <a
+              href="https://www.tripadvisor.com/Profile/MardiGrasNOLA"
+              target="_blank"
+              ><img src="/img/social_Icons/tripadviser.svg" alt=""
+            /></a>
+          </li>
+        </ul>
+      </div>
+      <form action="" id="contactForm">
+        <input type="text" name="" id="name" placeholder="Your Name" />
+        <input type="tel" name="" id="phone" placeholder="Your Phone" />
+        <input type="text" name="" id="email" placeholder="Email Address" />
+        <input type="text" name="" id="sobject" placeholder="Sonbject" />
+        <textarea
+          name=""
+          id="textarea"
+          cols="30"
+          rows="7"
+          placeholder="Please write your message"
+        ></textarea>
+        <div id="msg"></div>
+        <button>Send</button>
+      </form>
+    </section>
+
+    <!-- ########## Section end here ########## -->
+
+    <!-- ########## Footer start here ########## -->
+
+    <footer>
+      <p>Copyright © 1996-2022 MardiGrasNewOrleans.com</p>
+    </footer>
+
+    <!-- ########## Footer end here ########## -->
+
+    <script src="/js/consistent.js"></script>
+    <script src="/js/contact.js"></script>
+  </body>
 </html>

@@ -1,0 +1,115 @@
+@import url(/css/consistent.css);
+
+#quizSection {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: linear-gradient(
+      rgba(148, 83, 166, 0.95),
+      rgba(148, 83, 166, 0.95)
+    ),
+    url(/img/retro-bg.jpg);
+  box-shadow: 0px 2px 20px 7px rgba(0, 0, 0, 0.7);
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+input {
+  cursor: pointer;
+}
+
+.quiz-container {
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 15px;
+  width: 600px;
+  max-width: 95vw;
+  overflow: hidden;
+}
+
+.quiz-header {
+  padding: 4rem;
+}
+
+#question {
+  padding: 1rem;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+#question-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.answer-wraper {
+  font-size: 1.2em;
+  margin: 1rem 0;
+}
+
+.quiz-container button {
+  background-color: #8cbf3f;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  font-size: 1.3rem;
+  padding: 1.3rem;
+}
+
+.quiz-container button:hover {
+  background-color: #c3ff68;
+}
+
+.quiz-container button:focus {
+  outline: none;
+  background-color: #8cbf3f;
+}
+
+.hide {
+  display: none;
+}
+
+#res {
+  margin: 2%;
+  text-align: center;
+}
+
+#res-text {
+  margin: 2% 5%;
+  text-align: center;
+  font-weight: bold;
+}
+
+#lotoryForm {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: auto;
+}
+
+#lotoryForm input,
+#lotoryForm div {
+  margin-bottom: 10px;
+}
+
+#lotoryForm button {
+  position: relative;
+  width: 150%;
+  left: -90px;
+}
+
+#finel {
+  margin: 50px 2%;
+  text-align: center;
+}
+#hp-link {
+  text-decoration: none;
+  color: #fff;
+}

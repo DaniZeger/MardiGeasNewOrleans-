@@ -17,6 +17,7 @@
     ),
     url(/img/retro-bg.jpg);
   background-size: cover;
+  background-position: center;
   justify-content: center;
   align-items: center;
 }

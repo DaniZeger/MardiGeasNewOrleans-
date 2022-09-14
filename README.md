@@ -1,13 +1,3 @@
-## To do:
-
-- Finish video section
-
-- Contactt page
-
-- Trivia
-
-- Resposive!!!!
-
 # FONTS:
 
 - TITLE:

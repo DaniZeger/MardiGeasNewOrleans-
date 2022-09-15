@@ -121,3 +121,19 @@ textarea::placeholder {
 footer {
   height: 50px;
 }
+
+@media screen and (max-width: 600px) {
+  #contact-container {
+    flex-direction: column;
+  }
+
+  #contactForm {
+    margin-top: 25px;
+    width: 115%;
+    padding: 0%;
+  }
+
+  #contactForm button {
+    margin-top: 0px;
+  }
+}

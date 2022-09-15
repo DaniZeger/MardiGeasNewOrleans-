@@ -71,4 +71,10 @@
 .purple:hover {
   background-color: #5a3365;
 }
+
+@media screen and (max-width: 600px) {
+  #faq-section {
+    padding: 150px 2% 10% 2%;
+  }
+}
 /* FAQ Section style end here */

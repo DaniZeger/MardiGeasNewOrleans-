@@ -164,6 +164,12 @@
     font-size: 14px;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .mySlide h2 {
+    font-size: 27px;
+  }
+}
 /* ########### Slidshow style end here ########## */
 
 /* ########### First section style start here ########## */
@@ -321,6 +327,18 @@
   color: #8cbf3f;
   font-size: 32px;
   width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  #firstSection {
+    flex-direction: column;
+    height: fit-content;
+    padding: 5% 0;
+  }
+
+  .inner-first {
+    width: 90%;
+  }
 }
 
 /* ########### First section style end here ########## */
@@ -594,6 +612,30 @@
   }
 }
 
+@media screen and (max-width: 600px) {
+  #sp-container {
+    flex-direction: column;
+    padding: 0%;
+  }
+
+  #carousel-wrapper {
+    width: 100%;
+  }
+
+  #previous-option,
+  #next-option {
+    position: relative;
+    left: -50px;
+    margin: 0;
+  }
+
+  #sp-container h1 {
+    margin: 0;
+    font-size: 50px;
+    text-align: center;
+  }
+}
+
 /* ########### Second section style end here ########## */
 
 /* ########### Third section style start here ########## */
@@ -648,6 +690,17 @@
   font-weight: bold;
   font-style: italic;
   font-size: 18px;
+}
+
+@media screen and (max-width: 600px) {
+  #section3 h2 {
+    text-align: center;
+    font-size: 30px;
+  }
+
+  #newsletter {
+    width: 300px;
+  }
 }
 
 /* ########### Third section style end here ########## */

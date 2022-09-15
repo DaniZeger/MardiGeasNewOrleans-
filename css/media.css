@@ -53,6 +53,16 @@
   max-height: 80%;
 }
 
+@media screen and (max-width: 600px) {
+  #firstSec {
+    padding: 150px 0 50px 0;
+  }
+
+  iframe {
+    width: 450px;
+  }
+}
+
 #video-container {
   padding: 2% 0;
   display: flex;
